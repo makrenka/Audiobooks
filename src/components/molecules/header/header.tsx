@@ -1,6 +1,7 @@
 import { HandySvg } from "handy-svg";
 import logo from '../../../assets/images/icons/logo.svg';
 import settings from '../../../assets/images/icons/settings.svg';
+import './header.css';
 
 export const Header = () => (
     <header className="header">
