@@ -1,9 +1,9 @@
 import './App.css';
-import { Header } from './components/molecules/header';
+import { HomePage } from './components/pages/home';
 
 function App() {
   return (
-    <Header />
+    <HomePage />
   );
 }
 

@@ -1,0 +1,30 @@
+.categories-home {
+    margin-top: 40px;
+}
+
+.categories-home__heading-string {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories-home__heading-string-heading {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--headings);
+}
+
+.categories-home__heading-string-link {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: var(--links);
+    text-decoration: none;
+}
