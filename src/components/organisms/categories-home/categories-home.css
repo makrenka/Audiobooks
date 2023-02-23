@@ -28,3 +28,15 @@
     color: var(--links);
     text-decoration: none;
 }
+
+.categories-home__buttons {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    margin-right: -28px;
+}
+
+.categories-home__buttons::-webkit-scrollbar {
+    width: 0;
+}

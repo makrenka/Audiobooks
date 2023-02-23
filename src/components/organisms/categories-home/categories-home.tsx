@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { categories } from "../../../constants/categories";
+import { CategoryHomeBtn } from "../../atoms/category-home-btn";
 import './categories-home.css';
 
 export const CategoriesHome = () => (
@@ -15,6 +17,11 @@ export const CategoriesHome = () => (
                     {/* <Link to="#" className="categories-home__heading-string-link">
                         See more
                     </Link> */}
+                </div>
+                <div className="categories-home__buttons">
+                    {categories.map((item) =>
+                        <CategoryHomeBtn data={item} />
+                    )}
                 </div>
             </div>
         </div>
