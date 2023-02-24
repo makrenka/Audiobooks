@@ -1,9 +1,13 @@
+import { sections } from "../../../constants/sections";
 import { Header } from "../../molecules/header";
-import { CategoriesHome } from "../../organisms/categories-home";
+import { SectionHome } from "../../organisms/categories-home";
 
 export const HomePage = () => (
     <>
         <Header />
-        <CategoriesHome />
+        {sections.map(({ ...item }) =>
+            <SectionHome {...item} />
+        )}
+
     </>
 )

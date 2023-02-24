@@ -1,1 +1,1 @@
-export { CategoriesHome } from './categories-home';
+export { SectionHome } from './section-home';
