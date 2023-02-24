@@ -1,3 +1,15 @@
+.categories-home__buttons {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    margin-top: 16px;
+    margin-right: -28px;
+}
+
+.categories-home__buttons::-webkit-scrollbar {
+    width: 0;
+}
+
 .categories-home__btn {
     height: 40px;
     background: #F5F5FA;

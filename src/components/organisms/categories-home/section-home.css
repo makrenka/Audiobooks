@@ -1,14 +1,14 @@
-.categories-home {
-    margin-top: 40px;
+.section-home {
+    margin-top: 32px;
 }
 
-.categories-home__heading-string {
+.section-home__heading-string {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.categories-home__heading-string-heading {
+.section-home__heading-string-heading {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -18,7 +18,7 @@
     color: var(--headings);
 }
 
-.categories-home__heading-string-link {
+.section-home__heading-string-link {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -29,7 +29,7 @@
     text-decoration: none;
 }
 
-.categories-home__buttons {
+.section-home__buttons {
     margin-top: 16px;
     display: flex;
     align-items: center;
@@ -37,6 +37,6 @@
     margin-right: -28px;
 }
 
-.categories-home__buttons::-webkit-scrollbar {
+.section-home__buttons::-webkit-scrollbar {
     width: 0;
 }

@@ -5,8 +5,8 @@ import { SectionHome } from "../../organisms/categories-home";
 export const HomePage = () => (
     <>
         <Header />
-        {sections.map(({ id, ...item }) =>
-            <SectionHome key={id} {...item} />
+        {sections.map(({ name, content }) =>
+            <SectionHome key={name} name={name} content={content} />
         )}
 
     </>
