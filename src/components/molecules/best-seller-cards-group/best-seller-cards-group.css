@@ -21,6 +21,7 @@
 .best-seller-home__card-img {
     width: 120px;
     height: 120px;
+    border-radius: 4px;
 }
 
 .best-seller-home__card-description {

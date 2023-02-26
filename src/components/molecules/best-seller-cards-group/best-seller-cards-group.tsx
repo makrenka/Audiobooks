@@ -1,9 +1,9 @@
-import { bestSellerCards } from "../../../constants/best-seller-cards";
+import { audiobooks } from "../../../constants/audiobooks";
 import './best-seller-cards-group.css';
 
 export const BestSellerCardsGroup = () => (
     <div className="best-seller-home__cards">
-        {bestSellerCards.map(({ cover, title, author, rating, listeners, name }) =>
+        {audiobooks.map(({ cover, title, author, rating, listeners, name }) =>
             <div className="best-seller-home__card" key={name}>
                 <img src={cover} alt="Cover of the book" className="best-seller-home__card-img" />
                 <div className="best-seller-home__card-description">
