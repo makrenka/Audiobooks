@@ -1,6 +1,9 @@
 import { HandySvg } from "handy-svg";
+import { Link } from "react-router-dom";
+
 import logo from '../../../assets/images/icons/logo.svg';
 import settings from '../../../assets/images/icons/settings.svg';
+
 import './header.css';
 
 export const Header = () => (
@@ -8,15 +11,17 @@ export const Header = () => (
         <div className="container">
             <div className="header__wrapper">
                 <div className="header___logo">
-                    <HandySvg
-                        src={logo}
-                        className="header___logo-icon"
-                        width="40"
-                        height="40"
-                    />
-                    <h1 className="header__heading">
-                        AudiBooks
-                    </h1>
+                    <Link to="/">
+                        <HandySvg
+                            src={logo}
+                            className="header___logo-icon"
+                            width="40"
+                            height="40"
+                        />
+                        <h1 className="header__heading">
+                            AudiBooks
+                        </h1>
+                    </Link>
                 </div>
                 <HandySvg
                     src={settings}

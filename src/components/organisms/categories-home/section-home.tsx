@@ -10,12 +10,9 @@ export const SectionHome = ({ name, content }: { name: string, content: React.Re
                     <h2 className="section-home__heading-string-heading">
                         {name}
                     </h2>
-                    <a href="#" className="section-home__heading-string-link">
+                    <Link to="/section" className="categories-home__heading-string-link">
                         See more
-                    </a>
-                    {/* <Link to="#" className="categories-home__heading-string-link">
-                        See more
-                    </Link> */}
+                    </Link>
                 </div>
                 {content}
             </div>

@@ -1,10 +1,17 @@
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { HomePage } from './components/pages/home';
+import { SectionPage } from './components/pages/section-page';
 
-function App() {
-  return (
-    <HomePage />
-  );
-}
+export const App = () => (
+  <HashRouter>
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/section' element={<SectionPage />}>
 
-export default App;
+      </Route>
+    </Routes>
+
+  </HashRouter>
+
+) 
