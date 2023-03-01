@@ -6,9 +6,9 @@ import arrowHeader from '../../../assets/images/icons/arrow-header-section.svg';
 import './header-section.css';
 
 export const HeaderSection = () => (
-    <header className="header">
+    <header className="header-section">
         <div className="container">
-            <div className="header__wrapper">
+            <div className="header-section__wrapper">
                 <Link to="/">
                     <HandySvg
                         src={arrowHeader}

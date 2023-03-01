@@ -18,6 +18,8 @@ export const Header = () => (
                             width="40"
                             height="40"
                         />
+                    </Link>
+                    <Link to="/" className="header__heading-link">
                         <h1 className="header__heading">
                             AudiBooks
                         </h1>
