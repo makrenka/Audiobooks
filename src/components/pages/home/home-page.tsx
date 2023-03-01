@@ -9,8 +9,8 @@ export const HomePage = () => (
     <>
         <Header />
         <main className="home-page__main">
-            {sections.map(({ name, content }) =>
-                <SectionHome key={name} name={name} content={content} />
+            {sections.map(({ name, content, url }) =>
+                <SectionHome key={name} name={name} content={content} url={url} />
             )}
         </main>
         <BottomBar />

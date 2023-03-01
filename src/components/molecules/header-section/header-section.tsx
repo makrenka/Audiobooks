@@ -5,7 +5,7 @@ import arrowHeader from '../../../assets/images/icons/arrow-header-section.svg';
 
 import './header-section.css';
 
-export const HeaderSection = () => (
+export const HeaderSection = ({ heading }: { heading: string }) => (
     <header className="header-section">
         <div className="container">
             <div className="header-section__wrapper">
@@ -18,7 +18,7 @@ export const HeaderSection = () => (
                     />
                 </Link>
                 <h2 className="header-section___heading">
-                    New Releases
+                    {heading}
                 </h2>
             </div>
         </div>

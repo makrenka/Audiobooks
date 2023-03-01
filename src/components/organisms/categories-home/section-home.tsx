@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './section-home.css';
 
-export const SectionHome = ({ name, content }: { name: string, content: React.ReactNode }) => (
+export const SectionHome = (
+    { name, content, url }: { name: string, content: React.ReactNode, url: string }
+) => (
     <section className="section-home">
         <div className="container">
             <div className="section-home__wrapper">
@@ -10,7 +12,7 @@ export const SectionHome = ({ name, content }: { name: string, content: React.Re
                     <h2 className="section-home__heading-string-heading">
                         {name}
                     </h2>
-                    <Link to="/section" className="categories-home__heading-string-link">
+                    <Link to={"/" + url} className="categories-home__heading-string-link">
                         See more
                     </Link>
                 </div>

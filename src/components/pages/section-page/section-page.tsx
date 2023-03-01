@@ -1,11 +1,12 @@
 import { audiobooks } from '../../../constants/audiobooks';
 import { HeaderSection } from '../../molecules/header-section';
+import { BottomBar } from "../../molecules/bottom-bar";
 
 import './section-page.css';
 
-export const SectionPage = () => (
+export const SectionPage = ({ heading }: { heading: string }) => (
     <>
-        <HeaderSection />
+        <HeaderSection heading={heading} />
         <div className='container'>
             <main className='section-page-main'>
                 {audiobooks.map(({ cover, title, author }) =>
@@ -17,6 +18,7 @@ export const SectionPage = () => (
                 )}
             </main>
         </div>
+        <BottomBar />
     </>
 
 )
