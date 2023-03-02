@@ -37,7 +37,7 @@ export const BottomBar = () => (
                     width="25"
                     height="24"
                 />
-                <span>Search</span>
+                <span>Library</span>
             </a>
         </div>
         <HomeIndicator />

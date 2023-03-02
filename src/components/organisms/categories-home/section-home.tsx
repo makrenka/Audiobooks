@@ -12,7 +12,7 @@ export const SectionHome = (
                     <h2 className="section-home__heading-string-heading">
                         {name}
                     </h2>
-                    <Link to={"/" + url} className="categories-home__heading-string-link">
+                    <Link to={"/" + url} className="section-home__heading-string-link">
                         See more
                     </Link>
                 </div>
