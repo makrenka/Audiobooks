@@ -14,7 +14,12 @@ export const audiobooks = [
         author: "Laurie Forest",
         rating: rating,
         listeners: "1,000+ Listeners",
-        name: "card-1",
+        id: "1",
+        section: [
+            "recommended",
+            "best",
+            "trending"
+        ],
     },
     {
         cover: card2,
@@ -23,7 +28,12 @@ export const audiobooks = [
         author: "Laurie Forest",
         rating: rating,
         listeners: "1,000+ Listeners",
-        name: "card-2",
+        id: "2",
+        section: [
+            "recommended",
+            "best",
+            "new"
+        ],
     },
     {
         cover: card3,
@@ -32,7 +42,11 @@ export const audiobooks = [
         author: "Laurie Forest",
         rating: rating,
         listeners: "1,000+ Listeners",
-        name: "card-3",
+        id: "3",
+        section: [
+            "best",
+            "trending",
+        ],
     },
     {
         cover: card4,
@@ -41,7 +55,11 @@ export const audiobooks = [
         author: "Laurie Forest",
         rating: rating,
         listeners: "1,000+ Listeners",
-        name: "card-4",
+        id: "4",
+        section: [
+            "new",
+            "trending",
+        ],
     },
     {
         cover: card5,
@@ -50,6 +68,10 @@ export const audiobooks = [
         author: "Emily R. King",
         rating: rating,
         listeners: "1,000+ Listeners",
-        name: "card-5",
+        id: "5",
+        section: [
+            "recommended",
+            "best",
+        ],
     },
 ]

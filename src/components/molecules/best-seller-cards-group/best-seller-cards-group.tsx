@@ -3,8 +3,8 @@ import './best-seller-cards-group.css';
 
 export const BestSellerCardsGroup = () => (
     <div className="best-seller-home__cards">
-        {audiobooks.map(({ cover, title, author, rating, listeners, name }) =>
-            <div className="best-seller-home__card" key={name}>
+        {audiobooks.map(({ cover, title, author, rating, listeners, id }) =>
+            <div className="best-seller-home__card" key={id}>
                 <img src={cover} alt="Cover of the book" className="best-seller-home__card-img" />
                 <div className="best-seller-home__card-description">
                     <h3 className="best-seller-home__card-description-heading">{title}</h3>
