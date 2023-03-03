@@ -19,7 +19,7 @@ export const SectionPage = ({ heading, section }: { heading: string, section: st
                     )}
             </main>
         </div>
-        <BottomBar />
+        <BottomBar home="active" search="active" />
     </>
 
 )
