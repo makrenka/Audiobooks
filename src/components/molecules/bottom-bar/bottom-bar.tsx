@@ -7,23 +7,24 @@ import homeIconActive from "../../../assets/images/icons/bottom-bar/home-icon-ac
 import homeIconUnactive from "../../../assets/images/icons/bottom-bar/home-icon-unactive.svg";
 import searchIconUnactive from "../../../assets/images/icons/bottom-bar/search-icon-unactive.svg";
 import searchIconActive from "../../../assets/images/icons/bottom-bar/search-icon-active.svg";
-import libraryIcon from "../../../assets/images/icons/bottom-bar/library-icon-unactive.svg";
+import libraryIconActive from "../../../assets/images/icons/bottom-bar/library-icon-active.svg";
+import libraryIconUnactive from "../../../assets/images/icons/bottom-bar/library-icon-unactive.svg";
 
 import './bottom-bar.css';
 
-export const BottomBar = ({ home, search }: { home: string, search: string }) => (
+export const BottomBar = () => (
     <div className="bottom-bar">
         <div className="bottom-bar__tab-bar">
             <NavLink to="/" className="bottom-bar__tab-bar-link">
                 <HandySvg
                     src={homeIconActive}
-                    className={"bottom-bar__tab-bar-link-icon" + home}
+                    className="bottom-bar__tab-bar-link-icon-active"
                     width="25"
                     height="24"
                 />
                 <HandySvg
                     src={homeIconUnactive}
-                    className="bottom-bar__tab-bar-link-icon"
+                    className="bottom-bar__tab-bar-link-icon-unactive"
                     width="25"
                     height="24"
                 />
@@ -31,28 +32,34 @@ export const BottomBar = ({ home, search }: { home: string, search: string }) =>
             </NavLink>
             <NavLink to="/search" className="bottom-bar__tab-bar-link">
                 <HandySvg
-                    src={searchIconUnactive}
-                    className="bottom-bar__tab-bar-link-icon"
+                    src={searchIconActive}
+                    className="bottom-bar__tab-bar-link-icon-active"
                     width="25"
                     height="24"
                 />
                 <HandySvg
-                    src={searchIconActive}
-                    className={"bottom-bar__tab-bar-link-icon" + search}
+                    src={searchIconUnactive}
+                    className="bottom-bar__tab-bar-link-icon-unactive"
                     width="25"
                     height="24"
                 />
                 <span>Search</span>
             </NavLink>
-            <a href="#" className="bottom-bar__tab-bar-link">
+            <NavLink to="/library" className="bottom-bar__tab-bar-link">
                 <HandySvg
-                    src={libraryIcon}
-                    className="bottom-bar__tab-bar-link-icon"
+                    src={libraryIconActive}
+                    className="bottom-bar__tab-bar-link-icon-active"
+                    width="25"
+                    height="24"
+                />
+                <HandySvg
+                    src={libraryIconUnactive}
+                    className="bottom-bar__tab-bar-link-icon-unactive"
                     width="25"
                     height="24"
                 />
                 <span>Library</span>
-            </a>
+            </NavLink>
         </div>
         <HomeIndicator />
     </div>

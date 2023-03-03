@@ -30,3 +30,15 @@
 .bottom-bar__tab-bar-link.active {
     color: #4838D1;
 }
+
+.bottom-bar__tab-bar-link-icon-active {
+    display: none;
+}
+
+.bottom-bar__tab-bar-link.active .bottom-bar__tab-bar-link-icon-active {
+    display: block;
+}
+
+.bottom-bar__tab-bar-link.active .bottom-bar__tab-bar-link-icon-unactive {
+    display: none;
+}

@@ -13,6 +13,6 @@ export const HomePage = () => (
                 <SectionHome key={name} name={name} content={content} url={url} />
             )}
         </main>
-        <BottomBar home="active" search="active" />
+        <BottomBar />
     </>
 )
