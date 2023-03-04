@@ -13,7 +13,7 @@ import libraryIconUnactive from "../../../assets/images/icons/bottom-bar/library
 import './bottom-bar.css';
 
 export const BottomBar = () => (
-    <div className="bottom-bar">
+    <footer className="bottom-bar">
         <div className="bottom-bar__tab-bar">
             <NavLink to="/" className="bottom-bar__tab-bar-link">
                 <HandySvg
@@ -62,5 +62,5 @@ export const BottomBar = () => (
             </NavLink>
         </div>
         <HomeIndicator />
-    </div>
+    </footer>
 )
