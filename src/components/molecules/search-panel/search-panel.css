@@ -15,7 +15,7 @@
 .search-page__search-panel-input {
     margin-top: 12px;
     padding: 16px 24px;
-    background: #F5F5FA;
+    background: var(--background-buttons);
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;

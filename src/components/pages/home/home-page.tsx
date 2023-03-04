@@ -1,4 +1,4 @@
-import { sections } from "../../../constants/sections";
+import { sections } from "../../../constants/sections-home";
 import { BottomBar } from "../../molecules/bottom-bar";
 import { Header } from "../../molecules/header";
 import { SectionHome } from "../../organisms/categories-home";
