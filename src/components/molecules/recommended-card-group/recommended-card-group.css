@@ -7,6 +7,7 @@
 
 .recommended-home__images::-webkit-scrollbar {
     width: 0;
+    height: 0;
 }
 
 .recommended-home__img {

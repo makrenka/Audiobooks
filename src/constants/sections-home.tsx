@@ -6,7 +6,7 @@ import { NewAndTrendCardsGroup } from "../components/molecules/new-and-trend-car
 export const sections = [
     { name: "Categories", content: <CategoryHomeBtnGroup />, url: "categories" },
     { name: "Recommended For You", content: <RecommendedCardGroup />, url: "recommended" },
-    { name: "Best Seller", content: <BestSellerCardsGroup />, url: "best" },
-    { name: "New Releases", content: <NewAndTrendCardsGroup />, url: "new" },
-    { name: "Trending Now", content: <NewAndTrendCardsGroup />, url: "trending" },
+    { name: "Best Seller", content: <BestSellerCardsGroup section="best" />, url: "best" },
+    { name: "New Releases", content: <NewAndTrendCardsGroup section="new" />, url: "new" },
+    { name: "Trending Now", content: <NewAndTrendCardsGroup section="trending" />, url: "trending" },
 ]
