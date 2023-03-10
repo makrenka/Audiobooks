@@ -3,14 +3,16 @@ import './search-panel.css';
 
 interface Props {
     onValueChange: (value: string) => void,
+    onSubmit: (onSubmit: boolean) => void,
 }
 
-export class SearchPanel extends Component<Props, { value: string }> {
+export class SearchPanel extends Component<Props, { value: string, onSubmit: boolean }> {
     constructor(props: Props) {
         super(props);
 
         this.state = {
             value: '',
+            onSubmit: true,
         }
     }
 
@@ -20,10 +22,15 @@ export class SearchPanel extends Component<Props, { value: string }> {
         this.props.onValueChange(value);
     }
 
+    onSubmit = (e: ChangeEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        this.props.onSubmit(this.state.onSubmit);
+    }
+
     render(): ReactNode {
         return (
             <div className='container'>
-                <form className="search-page__search-panel">
+                <form className="search-page__search-panel" onSubmit={this.onSubmit}>
                     <label htmlFor="search" className='search-page__search-panel-label'>
                         Explore
                     </label>

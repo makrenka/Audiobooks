@@ -10,7 +10,7 @@ export const CategorySearchBtnGroup = () => (
             </h2>
             <div className="search-page__categories-buttons">
                 {searchRecommendedCategories.map(({ icon, name }) =>
-                    <button className="search-page__categories-buttons-btn">
+                    <button className="search-page__categories-buttons-btn" key={name}>
                         {icon}
                         <span>{name}</span>
                     </button>
