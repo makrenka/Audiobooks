@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import arrowHeader from '../../../assets/images/icons/arrow-header-section.svg';
 import moreHeader from '../../../assets/images/icons/more-header-detail.svg';
 
-export const HeaderDetail = () => (
+import './header-detail.css';
+
+export const HeaderDetail = ({ title }: { title: string | undefined }) => (
     <header className="header-detail">
         <div className="container">
             <div className="header-detail__wrapper">
@@ -16,8 +18,8 @@ export const HeaderDetail = () => (
                         height="24"
                     />
                 </Link>
-                <h2 className="header-detail__eading">
-                    Harry Potter and the Sorc...
+                <h2 className="header-detail__heading">
+                    {title}
                 </h2>
                 <HandySvg
                     src={moreHeader}
