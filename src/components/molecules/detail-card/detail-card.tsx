@@ -1,8 +1,15 @@
-export const DetailCard = ({ cover }: { cover: string | undefined }) => (
+import './detail-card.css';
+
+export const DetailCard = ({ cover, title }: {
+    cover: string | undefined,
+    title: string | undefined,
+}) => (
     <div className="detail-page__main-card">
-        {cover}
+        <div className='detail-page__card-img-wrapper'>
+            <img src={cover} alt="Book cover" className="detail-page__card-img" />
+        </div>
         <h2 className="detail-page__card-heading">
-            Harry Potter and the Sorcer...
+            {title}
         </h2>
     </div>
 )
