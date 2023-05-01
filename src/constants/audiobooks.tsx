@@ -13,6 +13,7 @@ export const audiobooks = [
         title: "The Kidnapper’s Accomplice",
         author: "Laurie Forest",
         rating: rating,
+        ratingNumber: 4,
         listeners: "1,000+ Listeners",
         id: "1",
         section: [
@@ -27,6 +28,7 @@ export const audiobooks = [
         title: "The Black Witch",
         author: "Laurie Forest",
         rating: rating,
+        ratingNumber: 4,
         listeners: "1,000+ Listeners",
         id: "2",
         section: [
@@ -41,6 +43,7 @@ export const audiobooks = [
         title: "The Prisoner’s Key",
         author: "Laurie Forest",
         rating: rating,
+        ratingNumber: 4,
         listeners: "1,000+ Listeners",
         id: "3",
         section: [
@@ -54,6 +57,7 @@ export const audiobooks = [
         title: "Light Mage",
         author: "Laurie Forest",
         rating: rating,
+        ratingNumber: 4,
         listeners: "1,000+ Listeners",
         id: "4",
         section: [
@@ -67,6 +71,7 @@ export const audiobooks = [
         title: "The Fire Queen",
         author: "Emily R. King",
         rating: rating,
+        ratingNumber: 4,
         listeners: "1,000+ Listeners",
         id: "5",
         section: [

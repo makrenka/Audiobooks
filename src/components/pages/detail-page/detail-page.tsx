@@ -56,9 +56,12 @@ export const DetailPage = () => {
     type Props = {
         title?: string,
         cover?: string,
+        author?: string,
+        rating?: string,
+        ratingNumber?: number,
     };
 
-    const { title, cover }: Props = book[0];
+    const { title, cover, author, rating, ratingNumber }: Props = book[0];
 
     return (
         <>
@@ -68,6 +71,9 @@ export const DetailPage = () => {
                     <DetailCard
                         cover={cover}
                         title={title}
+                        author={author}
+                        rating={rating}
+                        ratingNumber={ratingNumber}
                     />
                 </div>
             </main>
