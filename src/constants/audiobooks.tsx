@@ -21,6 +21,11 @@ export const audiobooks = [
             "best",
             "trending"
         ],
+        category: [
+            "Fantasy",
+            "Drama",
+            "Fiction",
+        ],
     },
     {
         cover: card2,
@@ -36,6 +41,10 @@ export const audiobooks = [
             "best",
             "new"
         ],
+        category: [
+            "Fantasy",
+            "Comedy",
+        ],
     },
     {
         cover: card3,
@@ -49,6 +58,11 @@ export const audiobooks = [
         section: [
             "best",
             "trending",
+        ],
+        category: [
+            "Fantasy",
+            "Drama",
+            "Travel",
         ],
     },
     {
@@ -64,6 +78,11 @@ export const audiobooks = [
             "new",
             "trending",
         ],
+        category: [
+            "Fantasy",
+            "Drama",
+            "Fiction",
+        ],
     },
     {
         cover: card5,
@@ -77,6 +96,11 @@ export const audiobooks = [
         section: [
             "recommended",
             "best",
+        ],
+        category: [
+            "Biography",
+            "Drama",
+            "Fiction",
         ],
     },
 ]

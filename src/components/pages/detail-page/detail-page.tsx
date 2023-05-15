@@ -1,9 +1,13 @@
-import { Component, ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
 import { audiobooks } from "../../../constants/audiobooks";
-import WithRouter from "./with-router";
 import { DetailCard } from "../../molecules/detail-card";
 import { HeaderDetail } from "../../molecules/header-detail";
+import { CategoryDetailBtnGroup } from "../../molecules/category-detail-btn-group";
+import { BottomBar } from "../../molecules/bottom-bar";
+
+import './detail-page.css';
 
 // type Params = {
 //     id?: string,
@@ -59,9 +63,10 @@ export const DetailPage = () => {
         author?: string,
         rating?: string,
         ratingNumber?: number,
+        category?: [],
     };
 
-    const { title, cover, author, rating, ratingNumber }: Props = book[0];
+    const { title, cover, author, rating, ratingNumber, category }: Props = book[0];
 
     return (
         <>
@@ -75,8 +80,12 @@ export const DetailPage = () => {
                         rating={rating}
                         ratingNumber={ratingNumber}
                     />
+                    <CategoryDetailBtnGroup
+                        category={category}
+                    />
                 </div>
             </main>
+            <BottomBar />
         </>
     )
 }
