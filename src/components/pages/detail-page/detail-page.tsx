@@ -9,6 +9,7 @@ import { BottomBar } from "../../molecules/bottom-bar";
 
 import './detail-page.css';
 import { DetailControlButtons } from "../../molecules/detail-control-buttons";
+import { DetailSummary } from "../../molecules/detail-summary";
 
 // type Params = {
 //     id?: string,
@@ -85,6 +86,7 @@ export const DetailPage = () => {
                         category={category}
                     />
                     <DetailControlButtons />
+                    <DetailSummary />
                 </div>
             </main>
             <BottomBar />

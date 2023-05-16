@@ -1,0 +1,22 @@
+.detail-page__detail-summary {
+    margin-top: 32px;
+}
+
+.detail-page__detail-summary-heading {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2E2E5D;
+}
+
+.detail-page__detail-summary-text {
+    margin-top: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6A6A8B;
+}
