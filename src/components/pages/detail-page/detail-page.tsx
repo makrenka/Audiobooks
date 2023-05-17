@@ -66,9 +66,10 @@ export const DetailPage = () => {
         rating?: string,
         ratingNumber?: number,
         category?: [],
+        summary?: string,
     };
 
-    const { title, cover, author, rating, ratingNumber, category }: Props = book[0];
+    const { title, cover, author, rating, ratingNumber, category, summary }: Props = book[0];
 
     return (
         <>
@@ -86,7 +87,9 @@ export const DetailPage = () => {
                         category={category}
                     />
                     <DetailControlButtons />
-                    <DetailSummary />
+                    <DetailSummary
+                        summary={summary}
+                    />
                 </div>
             </main>
             <BottomBar />
