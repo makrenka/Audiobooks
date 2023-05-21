@@ -10,6 +10,7 @@ import { BottomBar } from "../../molecules/bottom-bar";
 import './detail-page.css';
 import { DetailControlButtons } from "../../molecules/detail-control-buttons";
 import { DetailSummary } from "../../molecules/detail-summary";
+import { DetailReviews } from "../../organisms/detail-reviews";
 
 // type Params = {
 //     id?: string,
@@ -67,9 +68,10 @@ export const DetailPage = () => {
         ratingNumber?: number,
         category?: [],
         summary?: string,
+        reviews?: [],
     };
 
-    const { title, cover, author, rating, ratingNumber, category, summary }: Props = book[0];
+    const { title, cover, author, rating, ratingNumber, category, summary, reviews }: Props = book[0];
 
     return (
         <>
@@ -89,6 +91,9 @@ export const DetailPage = () => {
                     <DetailControlButtons />
                     <DetailSummary
                         summary={summary}
+                    />
+                    <DetailReviews
+                        reviews={reviews}
                     />
                 </div>
             </main>
