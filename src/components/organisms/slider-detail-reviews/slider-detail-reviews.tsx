@@ -1,8 +1,19 @@
 import { createContext, TouchEvent, useState } from 'react';
 
 import './slider-detail-reviews.css';
+import { SlidesList } from './slides-list';
 
-export const SliderContext = createContext();
+interface ContextProps {
+    slideCount: number | undefined,
+    slideNumber: number,
+}
+
+const valueContext = {
+    slideCount: 0,
+    slideNumber: 0,
+}
+
+export const SliderContext = createContext<ContextProps>(valueContext);
 
 export const SliderDetailReviews = ({ reviews }: { reviews: [] | undefined }) => {
 
@@ -55,14 +66,11 @@ export const SliderDetailReviews = ({ reviews }: { reviews: [] | undefined }) =>
         >
             <SliderContext.Provider
                 value={{
-                    goToSlide,
-                    changeSlide,
                     slideCount: reviews?.length,
-                    clideNumber: slide,
-                    reviews,
+                    slideNumber: slide,
                 }}
             >
-
+                <SlidesList reviews={reviews} />
             </SliderContext.Provider>
 
         </div>

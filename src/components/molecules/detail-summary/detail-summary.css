@@ -8,7 +8,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    color: #2E2E5D;
+    color: var(--detail-headings);
 }
 
 .detail-page__detail-summary-text {
@@ -18,5 +18,5 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
-    color: #6A6A8B;
+    color: var(--detail-text);
 }

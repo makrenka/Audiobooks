@@ -5,6 +5,7 @@ import card4 from '../assets/images/cards/card4.jpg';
 import card5 from '../assets/images/cards/card5.jpg';
 import recommendedCard from '../assets/images/cards/recommended-card.jpg';
 import rating from '../assets/images/icons/rating.png';
+import customerPhoto from '../assets/images/customer-photo.jpg';
 
 export const audiobooks = [
     {
@@ -28,21 +29,24 @@ export const audiobooks = [
         ],
         reviews: [
             {
-                image: "",
+                number: 1,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "2 days ago",
                 text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit."
             },
             {
-                image: "",
+                number: 2,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "3 days ago",
                 text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit."
             },
             {
-                image: "",
+                number: 3,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "4 days ago",
@@ -91,21 +95,24 @@ export const audiobooks = [
         ],
         reviews: [
             {
-                image: "",
+                number: 1,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "2 days ago",
                 text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit."
             },
             {
-                image: "",
+                number: 2,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "3 days ago",
                 text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit."
             },
             {
-                image: "",
+                number: 3,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "4 days ago",
@@ -134,21 +141,24 @@ export const audiobooks = [
         ],
         reviews: [
             {
-                image: "",
+                number: 1,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "2 days ago",
                 text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit."
             },
             {
-                image: "",
+                number: 2,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "3 days ago",
                 text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit."
             },
             {
-                image: "",
+                number: 3,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "4 days ago",
@@ -177,21 +187,24 @@ export const audiobooks = [
         ],
         reviews: [
             {
-                image: "",
+                number: 1,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "2 days ago",
                 text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit."
             },
             {
-                image: "",
+                number: 2,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "3 days ago",
                 text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit."
             },
             {
-                image: "",
+                number: 3,
+                image: customerPhoto,
                 name: "Ronald Richards",
                 rating: rating,
                 date: "4 days ago",
