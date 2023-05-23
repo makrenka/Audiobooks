@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { audiobooks } from "../../../constants/audiobooks";
@@ -49,6 +49,16 @@ import { DetailReviews } from "../../organisms/detail-reviews";
 
 // export default WithRouter(DetailPage);
 
+interface Reviews {
+    reviews: [] | undefined
+};
+
+const reviewsDefault = {
+    reviews: undefined,
+};
+
+export const ReviewsContext = createContext<Reviews>(reviewsDefault);
+
 export const DetailPage = () => {
     const params = useParams();
     const bookId = params.id;
@@ -92,9 +102,12 @@ export const DetailPage = () => {
                     <DetailSummary
                         summary={summary}
                     />
-                    <DetailReviews
-                        reviews={reviews}
-                    />
+                    <ReviewsContext.Provider
+                        value={{ reviews }}
+                    >
+                        <DetailReviews />
+                    </ReviewsContext.Provider>
+
                 </div>
             </main>
             <BottomBar />

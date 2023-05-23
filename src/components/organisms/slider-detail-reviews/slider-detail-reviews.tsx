@@ -1,24 +1,15 @@
-import { createContext, TouchEvent, useState } from 'react';
+import { TouchEvent, useContext, useState } from 'react';
 
-import './slider-detail-reviews.css';
+import { ReviewsContext } from '../../pages/detail-page/detail-page';
 import { SlidesList } from './slides-list';
 
-interface ContextProps {
-    slideCount: number | undefined,
-    slideNumber: number,
-}
+import './slider-detail-reviews.css';
 
-const valueContext = {
-    slideCount: 0,
-    slideNumber: 0,
-}
-
-export const SliderContext = createContext<ContextProps>(valueContext);
-
-export const SliderDetailReviews = ({ reviews }: { reviews: [] | undefined }) => {
+export const SliderDetailReviews = () => {
 
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState<number | null>(null);
+    const { reviews } = useContext(ReviewsContext);
 
     const changeSlide = (direction = 1) => {
         let slideNumber = 0;
@@ -64,14 +55,9 @@ export const SliderDetailReviews = ({ reviews }: { reviews: [] | undefined }) =>
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
         >
-            <SliderContext.Provider
-                value={{
-                    slideCount: reviews?.length,
-                    slideNumber: slide,
-                }}
-            >
-                <SlidesList reviews={reviews} />
-            </SliderContext.Provider>
+            <SlidesList
+                slideNumber={slide}
+            />
 
         </div>
     )

@@ -1,8 +1,10 @@
 import { useContext } from "react";
-import { SliderContext } from "./slider-detail-reviews";
 
-export const SlidesList = ({ reviews }: { reviews: [] | undefined }) => {
-    const { slideNumber } = useContext(SliderContext);
+import { ReviewsContext } from "../../pages/detail-page/detail-page";
+
+export const SlidesList = ({ slideNumber }: { slideNumber: number }) => {
+
+    const { reviews } = useContext(ReviewsContext)
 
     return (
         <div
