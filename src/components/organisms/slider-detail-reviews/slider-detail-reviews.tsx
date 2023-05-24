@@ -2,6 +2,7 @@ import { TouchEvent, useContext, useState } from 'react';
 
 import { ReviewsContext } from '../../pages/detail-page/detail-page';
 import { SlidesList } from './slides-list';
+import { Dots } from './dots';
 
 import './slider-detail-reviews.css';
 
@@ -58,7 +59,10 @@ export const SliderDetailReviews = () => {
             <SlidesList
                 slideNumber={slide}
             />
-
+            <Dots
+                slideNumber={slide}
+                goToSlide={goToSlide}
+            />
         </div>
     )
 }
