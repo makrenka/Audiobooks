@@ -6,7 +6,7 @@ import { Dots } from './dots';
 
 import './slider-detail-reviews.css';
 
-export const SliderDetailReviews = () => {
+export const SliderDetailReviews = ({ onSlider }: { onSlider: () => void }) => {
 
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState<number | null>(null);
@@ -16,16 +16,16 @@ export const SliderDetailReviews = () => {
         let slideNumber = 0;
 
         if (slide + direction < 0) {
-            slideNumber = (reviews || '').length - 1;
-        } else {
-            slideNumber = (slide + direction) % (reviews || '').length;
-        };
+            slideNumber = 0;
+        } else if (slide + direction <= (reviews || '').length - 1) {
+            slideNumber = (slide + direction);
+        } else { slideNumber = (reviews || '').length - 1 };
 
         setSlide(slideNumber);
     };
 
     const goToSlide = (number: number) => {
-        setSlide(number % (reviews || '').length);
+        setSlide(number);
     };
 
     const handleTouchStart = (e: TouchEvent) => {
@@ -59,10 +59,18 @@ export const SliderDetailReviews = () => {
             <SlidesList
                 slideNumber={slide}
             />
-            <Dots
-                slideNumber={slide}
-                goToSlide={goToSlide}
-            />
+            <div className='detail-page__reviews-slider-links-wrapper'>
+                <Dots
+                    slideNumber={slide}
+                    goToSlide={goToSlide}
+                />
+                <button
+                    className='detail-page__reviews-slider-view-link'
+                    onClick={() => onSlider()}
+                >
+                    View More
+                </button>
+            </div>
         </div>
     )
 }

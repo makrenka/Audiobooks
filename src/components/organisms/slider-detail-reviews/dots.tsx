@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import classNames from "classnames";
 
 import { ReviewsContext } from "../../pages/detail-page/detail-page";
 
@@ -15,7 +16,7 @@ export const Dots = ({ slideNumber, goToSlide }: {
         for (let i = 0; i < countSlides; i++) {
             dots.push(<div
                 key={i}
-                className={`detail-page__reviews-slider-dot ${slideNumber === i ? "selected" : ""}`}
+                className={classNames('detail-page__reviews-slider-dot', { selected: slideNumber === i })}
                 onClick={() => goToSlide(i)}
             />);
         };

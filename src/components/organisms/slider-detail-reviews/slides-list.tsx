@@ -1,41 +1,10 @@
-import { useContext } from "react";
+import { Slide } from "./slide";
 
-import { ReviewsContext } from "../../pages/detail-page/detail-page";
-
-export const SlidesList = ({ slideNumber }: { slideNumber: number }) => {
-
-    const { reviews } = useContext(ReviewsContext)
-
-    return (
-        <div
-            className="detail-page__reviews-slider-slides"
-            style={{ transform: `translateX(-${slideNumber * 100}%)` }}
-        >
-            {reviews?.map(({ number, image, name, rating, date, text }) => (
-                <div className="detail-page__reviews-slider-slide" key={number}>
-                    <div className="detail-page__reviews-slider-slide-info-wrapper">
-                        <img src={image} alt="avatar" className="detail-page__reviews-slider-slide-img" />
-                        <div className="detail-page__reviews-slider-slide-info">
-                            <h3 className="detail-page__reviews-slider-slide-info-name">
-                                {name}
-                            </h3>
-                            <div className="detail-page__reviews-slider-slide-info-rating">
-                                <img
-                                    src={rating}
-                                    alt="rating"
-                                    className="detail-page__reviews-slider-slide-info-rating-img"
-                                />
-                                <p className="detail-page__reviews-slider-slide-info-rating-date">
-                                    {date}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <p className="detail-page__reviews-slider-slide-review">
-                        {text}
-                    </p>
-                </div>
-            ))}
-        </div>
-    )
-}
+export const SlidesList = ({ slideNumber }: { slideNumber: number }) => (
+    <div
+        className="detail-page__reviews-slider-slides"
+        style={{ transform: `translateX(-${slideNumber * 100}%)` }}
+    >
+        <Slide />
+    </div>
+)
